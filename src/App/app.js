@@ -23,7 +23,7 @@ class App extends React.Component {
                 <Route path="/portal">
                     <AlgoPortal />
                 </Route>
-                <Route exact path="/" render={() => <Redirect to="/portal/algodesk" />} />
+                <Route exact path="/" render={() => <Redirect to="/portal/home" />} />
             </Switch>
         </div>);
     }
