@@ -1,7 +1,6 @@
 // Build field names table
 function buildTable(o, par) {
   if (o !== null && typeof o == "object") {
-    console.log(o);
     Object.keys(o).forEach(function(key) {
       // Add an entry
       var r = document.createElement("tr");
