@@ -2,9 +2,10 @@
 
 .algodesk-portal-wrapper {
   width: 100%;
+  background: url(https://www.coinopsy.com/media/img/quality_logo/Algorand.png) no-repeat right;
+  background-size: contain;
   .algodesk-portal-container {
-    height: calc(100vh - 80px);
-    background: $color-light;
+    height: calc(100vh - 50px);
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
   }
 }

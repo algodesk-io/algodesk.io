@@ -4,22 +4,9 @@ import {connect} from "react-redux";
 import { withStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 
-const styles = theme => ({
-    select: {
-        '&:before': {
-            borderColor:'#fff',
-        },
-        '&:after': {
-            borderColor:'#fff',
-        },
-        textColor: '#fff'
-    },
-    icon: {
-        fill: '#fff',
-    },
-    root: {
-        textColor: '#fff',
-        color: '#fff'
+const styles = (theme) => ({
+    primaryText: {
+        color: theme.palette.primary.main
     }
 });
 
@@ -33,17 +20,17 @@ class Header extends React.Component {
     }
 
     render() {
+        const { classes } = this.props;
+
         return (<div className="header-wrapper">
             <div className="header-container">
                 <Grid container spacing={2}>
-                    <Grid item xs={2} sm={2} xl={2}>
-                        <div className="logo">
+                    <Grid item xs={12} md={3} xl={4}>
+                    </Grid>
+                    <Grid item xs={12} md={6} xl={4}>
+                        <div className={classes.primaryText + " logo"}>
                             Algodesk.io
                         </div>
-                    </Grid>
-                    <Grid item xs={8} sm={8} xl={8}></Grid>
-                    <Grid item xs={2} sm={2} xl={2}>
-
                     </Grid>
                 </Grid>
 

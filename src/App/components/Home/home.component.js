@@ -18,19 +18,23 @@ function getPage() {
                 </Grid>
                 <Grid item xs={12} md={6} xl={4}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12} md={1} xl={1}>
-
+                        <Grid item xs={12} md={10} xl={10}>
+                            <div className={"intro"}>Build. Test. Execute</div>
+                            <div className={"sub-intro"}>Algodesk provides open-source and developer-friendly tools to build decentralized apps and smart contracts on Algorand network.</div>
                         </Grid>
                         <Grid item xs={12} md={10} xl={10}>
-                            <FormControl fullWidth>
+                            <FormControl>
                                 <Button fullWidth variant="contained" color="primary" className="home-button" onClick={() => {
                                     window.open('/asa', '_blank')
                                 }}>
                                     Asset Management
                                 </Button>
                             </FormControl>
-                            <FormControl fullWidth>
-                                <Button fullWidth variant="contained" color="primary" className="home-button" onClick={() => {
+                            <FormControl>
+                                <Button fullWidth variant="contained" color="primary"
+                                        className="home-button"
+                                        style={{marginLeft: '20px', textTransform: "capitalize"}}
+                                        onClick={() => {
                                     window.open('/teal', '_blank')
                                 }}>
                                     TEAL Editor

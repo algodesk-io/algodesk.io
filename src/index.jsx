@@ -9,9 +9,15 @@ import store from '../src/App/store';
 const rootEl = document.getElementById('root');
 
 const theme = createMuiTheme({
+    typography: {
+        button: {
+            textTransform: 'none',
+            fontFamily: 'SourceSansPro'
+        }
+    },
     palette: {
         primary: {
-            main: '#A30786'
+            main: '#6a1b9a'
         },
         secondary: {
             main: '#d81b60'
