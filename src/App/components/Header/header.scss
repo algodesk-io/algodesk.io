@@ -8,6 +8,9 @@
       padding-top: 20px;
       font-size: 20px;
       font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .network-status {
       margin-top: 18px;

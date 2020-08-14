@@ -14,8 +14,7 @@ function getPage() {
     return (<div className="home-wrapper">
         <div className="home-container">
             <Grid container spacing={2}>
-                <Grid item xs={12} md={3} xl={4}>
-                </Grid>
+                <Grid item xs={12} md={3} xl={4}></Grid>
                 <Grid item xs={12} md={6} xl={4}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={10} xl={10}>
@@ -31,13 +30,24 @@ function getPage() {
                                 </Button>
                             </FormControl>
                             <FormControl>
-                                <Button fullWidth variant="contained" color="primary"
+                                <Button fullWidth variant="outlined" color="primary"
                                         className="home-button"
-                                        style={{marginLeft: '20px', textTransform: "capitalize"}}
+                                        style={{marginLeft: '20px', textTransform: "capitalize", marginRight: '20px'}}
                                         onClick={() => {
                                     window.open('/teal', '_blank')
                                 }}>
                                     TEAL Editor
+                                </Button>
+                            </FormControl>
+                            <FormControl>
+                                <Button fullWidth variant="text" color="primary"
+                                        className="home-button"
+                                        style={{marginLeft: '30px'}}
+                                        onClick={() => {
+                                            window.location.href = "mailto:admin@algodesk.io";
+                                        }}
+                                >
+                                    admin@algodesk.io
                                 </Button>
                             </FormControl>
                         </Grid>
@@ -54,6 +64,7 @@ function getPage() {
                 <Grid item xs={12} md={12} xl={12}>
                     <div className="disclaimer">
                         <div className="disclaimer-text">
+
                         </div>
                      </div>
                 </Grid>
