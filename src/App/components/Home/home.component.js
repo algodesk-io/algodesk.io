@@ -17,67 +17,74 @@ function getPage() {
     return (<div className="home-wrapper">
         <div className="home-container">
             <Grid container spacing={2}>
-                <Grid item xs={12} md={3} xl={4}></Grid>
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12} md={2} xl={2}></Grid>
+                <Grid item xs={12} md={4} xl={4}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12} md={10} xl={10}>
+                        <Grid item xs={12} sm={12} md={12} xl={12}>
                             <div className={"intro"}>Build. Test. Deploy</div>
                             <div className={"sub-intro"}>Algodesk provides open-source and developer-friendly tools to build decentralized apps and smart contracts on Algorand network.</div>
                         </Grid>
-                        <Grid item xs={12} md={10} xl={10}>
-                            <FormControl>
+                        <Grid item xs={12} sm={6} md={6} xl={6}>
                                 <Button fullWidth variant="contained" color="primary"
                                         className="home-button"
-                                        style={{marginLeft: '20px', textTransform: "capitalize", marginRight: 20, width: 400}}
+                                        style={{textTransform: "capitalize"}}
                                         startIcon={<AppsIcon></AppsIcon>}
                                         onClick={() => {
                                             window.open('/app-manager', '_blank')
                                         }}>
                                     Application Manager
                                 </Button>
-                            </FormControl>
-                            <div></div>
-                            <FormControl>
-                                <Button fullWidth variant="contained" color="secondary"
-                                        style={{marginLeft: '20px', textTransform: "capitalize", marginRight: '20px', width: 400}}
-                                        startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
-                                        className="home-button" onClick={() => {
-                                    window.open('/asa', '_blank')
-                                }}>
-                                    Asset Management
-                                </Button>
-                            </FormControl>
-                            <div></div>
-                            <FormControl>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={6} xl={6}>
                                 <Button fullWidth variant="outlined" color="primary"
                                         className="home-button"
-                                        style={{marginLeft: '20px', textTransform: "capitalize", marginRight: '20px', width: 400}}
+                                        style={{textTransform: "capitalize"}}
                                         startIcon={<SubjectIcon></SubjectIcon>}
                                         onClick={() => {
-                                    window.open('/teal', '_blank')
-                                }}>
+                                            window.open('/teal', '_blank')
+                                        }}>
                                     TEAL IDE Editor
                                 </Button>
-                            </FormControl>
-                            <div></div>
-                            <FormControl>
-                                <Button fullWidth variant="text" color="primary"
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={6} xl={6}>
+                            <Button fullWidth variant="contained" color="secondary"
+                                    style={{textTransform: "capitalize"}}
+                                    startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
+                                    className="home-button" onClick={() => {
+                                window.open('/asa', '_blank')
+                            }}>
+                                Asset Management
+                            </Button>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={6} xl={6}>
+                                <Button fullWidth variant="outlined" color="primary"
                                         className="home-button"
-                                        style={{width: 400, marginLeft: 20}}
+                                        style={{textTransform: "capitalize"}}
+                                        startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
+                                        onClick={() => {
+                                            window.open('/wallet', '_blank')
+                                        }}>
+                                    Web Wallet
+                                </Button>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12} xl={12}>
+                                <Button fullWidth variant="outlined" color="primary"
+                                        className="home-button"
                                         onClick={() => {
                                             window.location.href = "mailto:admin@algodesk.io";
                                         }}
                                 >
                                     admin@algodesk.io
                                 </Button>
-                            </FormControl>
                         </Grid>
                         <Grid item xs={12} md={1} xl={1}>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={3} xl={4}>
-
+                    <div className='algo-logo'>
+                        <img src={require('../../styles/images/Algorand.png')}/>
+                    </div>
                 </Grid>
             </Grid>
             <Grid container spacing={2}>

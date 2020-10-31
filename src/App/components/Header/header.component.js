@@ -25,7 +25,7 @@ class Header extends React.Component {
         return (<div className="header-wrapper">
             <div className="header-container">
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={3} xl={4}>
+                    <Grid item xs={12} sm={2} md={2} xl={2}>
                     </Grid>
                     <Grid item xs={12} md={6} xl={4}>
                         <div className={classes.primaryText + " logo"}>
