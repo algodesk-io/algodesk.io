@@ -8,6 +8,7 @@ import { withTheme } from '@material-ui/core/styles';
 import AppsIcon from '@material-ui/icons/Apps';
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import SubjectIcon from '@material-ui/icons/Subject';
+import AutorenewIcon from '@material-ui/icons/Autorenew';
 
 const mapStateToProps = state => {
     return { };
@@ -21,7 +22,9 @@ function getPage() {
                 <Grid item xs={12} md={4} xl={4}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} xl={12}>
-                            <div className={"intro"}>Build. Test. Deploy</div>
+                            <div className={"intro"}>Build. Test. Deploy
+                             <AutorenewIcon className={'main-icon'} color={"primary"} fontSize={"large"}></AutorenewIcon>
+                            </div>
                             <div className={"sub-intro"}>Algodesk provides open-source and developer-friendly tools to build decentralized apps and smart contracts on Algorand network.</div>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>

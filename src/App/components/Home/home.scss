@@ -1,5 +1,14 @@
 @import "../../styles/colors";
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .home-wrapper {
   .home-container {
     .intro {
@@ -9,6 +18,10 @@
       margin-top: 64px;
       letter-spacing: -0.018em;
       font-weight: 600;
+      .main-icon {
+        margin-left: 20px;
+        animation: rotation 2s infinite linear;
+      }
     }
     .sub-intro {
       font-family: "SourceSansProLight";
