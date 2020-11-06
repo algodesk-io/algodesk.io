@@ -36,7 +36,7 @@ function getPage() {
                                 </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                                <Button fullWidth variant="outlined" color="primary"
+                                <Button fullWidth variant="contained" color="primary"
                                         className="home-button"
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<SubjectIcon></SubjectIcon>}
@@ -57,7 +57,7 @@ function getPage() {
                             </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                                <Button fullWidth variant="outlined" color="primary"
+                                <Button fullWidth variant="contained" color="secondary"
                                         className="home-button"
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
