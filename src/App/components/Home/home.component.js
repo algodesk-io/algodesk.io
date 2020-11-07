@@ -9,6 +9,8 @@ import AppsIcon from '@material-ui/icons/Apps';
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import SubjectIcon from '@material-ui/icons/Subject';
 import AutorenewIcon from '@material-ui/icons/Autorenew';
+import WebAssetIcon from '@material-ui/icons/WebAsset';
+import CallToActionIcon from '@material-ui/icons/CallToAction';
 
 const mapStateToProps = state => {
     return { };
@@ -33,7 +35,7 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AppsIcon></AppsIcon>}
                                         onClick={() => {
-                                            window.open('/app-manager', '_blank')
+                                            window.open('https://applicationmanager.algodesk.io', '_blank')
                                         }}>
                                     Application Manager
                                 </Button>
@@ -44,19 +46,19 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<SubjectIcon></SubjectIcon>}
                                         onClick={() => {
-                                            window.open('/teal', '_blank')
+                                            window.open('https://teal.algodesk.io', '_blank')
                                         }}>
-                                    TEAL IDE Editor
+                                    TEAL IDE
                                 </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
                             <Button fullWidth variant="contained" color="secondary"
                                     style={{textTransform: "capitalize"}}
-                                    startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
+                                    startIcon={<CallToActionIcon></CallToActionIcon>}
                                     className="home-button" onClick={() => {
-                                window.open('/asa', '_blank')
+                                window.open('https://asa.algodesk.io', '_blank')
                             }}>
-                                Asset Management
+                                Asset Manager
                             </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
@@ -65,7 +67,7 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
                                         onClick={() => {
-                                            window.open('/wallet', '_blank')
+                                            window.open('https://wallet.algodesk.io', '_blank')
                                         }}>
                                     Web Wallet
                                 </Button>
