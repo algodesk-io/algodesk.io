@@ -87,7 +87,8 @@ function getPage() {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} sm={4} md={4} xl={4}>
-                    <div className='algo-logo'>
+                    <div>
+                        {/*<img className='algo-logo' src={require('../../styles/images/' + this.state.imgs[this.state.currentImgIndex])}/>*/}
                         <img src={require('../../styles/images/Algorand.png')}/>
                     </div>
                 </Grid>
@@ -110,7 +111,18 @@ class Home extends React.Component {
         super(props);
         this.getPage = getPage.bind(this);
         this.state = {
+            currentImgIndex: 0,
+            imgs: ['teal.png', 'wallet.png', 'apps.png']
         };
+
+        setInterval(() => {
+            if (this.state.currentImgIndex == this.state.imgs.length - 1) {
+                this.setState({...this.state, currentImgIndex: 0});
+            }
+            else {
+                this.setState({...this.state, currentImgIndex: this.state.currentImgIndex + 1});
+            }
+        }, 3000);
     }
 
     render() {
