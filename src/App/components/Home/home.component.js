@@ -20,12 +20,12 @@ function getPage() {
     return (<div className="home-wrapper">
         <div className="home-container">
             <Grid container spacing={2}>
-                <Grid item xs={12} md={2} xl={2}></Grid>
-                <Grid item xs={12} md={4} xl={4}>
+                <Grid item xs={12} sm={2} md={2} xl={2}></Grid>
+                <Grid item xs={12} sm={4} md={4} xl={4}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} xl={12}>
                             <div className={"intro"}>Build. Test. Deploy
-                             <AutorenewIcon className={'main-icon'} color={"primary"} fontSize={"large"}></AutorenewIcon>
+                             {/*<AutorenewIcon className={'main-icon'} color={"primary"} fontSize={"large"}></AutorenewIcon>*/}
                             </div>
                             <div className={"sub-intro"}>Algodesk provides open-source and developer-friendly tools to build decentralized apps and smart contracts on Algorand network.</div>
                         </Grid>
@@ -52,7 +52,7 @@ function getPage() {
                                 </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                            <Button fullWidth variant="contained" color="secondary"
+                            <Button fullWidth variant="contained" color="primary"
                                     style={{textTransform: "capitalize"}}
                                     startIcon={<CallToActionIcon></CallToActionIcon>}
                                     className="home-button" onClick={() => {
@@ -62,7 +62,7 @@ function getPage() {
                             </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                                <Button fullWidth variant="contained" color="secondary"
+                                <Button fullWidth variant="contained" color="primary"
                                         className="home-button"
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
@@ -72,21 +72,21 @@ function getPage() {
                                     Web Wallet
                                 </Button>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} xl={12}>
-                                <Button fullWidth variant="outlined" color="primary"
-                                        className="home-button"
-                                        onClick={() => {
-                                            window.location.href = "mailto:admin@algodesk.io";
-                                        }}
-                                >
-                                    admin@algodesk.io
-                                </Button>
-                        </Grid>
+                        {/*<Grid item xs={12} sm={12} md={12} xl={12}>*/}
+                        {/*        <Button fullWidth variant="outlined" color="primary"*/}
+                        {/*                className="home-button"*/}
+                        {/*                onClick={() => {*/}
+                        {/*                    window.location.href = "mailto:admin@algodesk.io";*/}
+                        {/*                }}*/}
+                        {/*        >*/}
+                        {/*            admin@algodesk.io*/}
+                        {/*        </Button>*/}
+                        {/*</Grid>*/}
                         <Grid item xs={12} md={1} xl={1}>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={3} xl={4}>
+                <Grid item xs={12} sm={4} md={4} xl={4}>
                     <div className='algo-logo'>
                         <img src={require('../../styles/images/Algorand.png')}/>
                     </div>
