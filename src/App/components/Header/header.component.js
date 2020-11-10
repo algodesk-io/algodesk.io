@@ -29,7 +29,7 @@ class Header extends React.Component {
                     <Grid item xs={2} sm={2} md={2} xl={2}>
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} xl={8}>
-                        <div className={classes.primaryText + " logo"}>
+                        <div className={"logo"}>
                             <img src={require('../../styles/images/Algorand.png')} style={{width: 15, marginRight: 5}} />
                             Algodesk.io
                         </div>

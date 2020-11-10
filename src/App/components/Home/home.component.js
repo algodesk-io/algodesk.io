@@ -30,7 +30,7 @@ function getPage() {
                             <div className={"sub-intro"}>Algodesk provides open-source and developer-friendly tools to build decentralized apps and smart contracts on Algorand network.</div>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                                <Button fullWidth variant="contained" color="primary"
+                                <Button fullWidth variant="outlined" color="primary"
                                         className="home-button"
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AppsIcon></AppsIcon>}
@@ -41,7 +41,7 @@ function getPage() {
                                 </Button>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} xl={6}>
-                                <Button fullWidth variant="contained" color="primary"
+                                <Button fullWidth variant="outlined" color="primary"
                                         className="home-button"
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<SubjectIcon></SubjectIcon>}
