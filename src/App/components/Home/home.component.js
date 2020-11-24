@@ -11,6 +11,7 @@ import SubjectIcon from '@material-ui/icons/Subject';
 import AutorenewIcon from '@material-ui/icons/Autorenew';
 import WebAssetIcon from '@material-ui/icons/WebAsset';
 import CallToActionIcon from '@material-ui/icons/CallToAction';
+import BugReportIcon from '@material-ui/icons/BugReport';
 
 const mapStateToProps = state => {
     return { };
@@ -35,7 +36,7 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AppsIcon></AppsIcon>}
                                         onClick={() => {
-                                            window.open('https://applicationmanager.algodesk.io', '_blank')
+                                            window.open('https://applicationmanager.algodesk.io', '_blank');
                                         }}>
                                     Application Manager
                                 </Button>
@@ -46,7 +47,7 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<SubjectIcon></SubjectIcon>}
                                         onClick={() => {
-                                            window.open('https://teal.algodesk.io', '_blank')
+                                            window.open('https://teal.algodesk.io', '_blank');
                                         }}>
                                     TEAL IDE
                                 </Button>
@@ -56,7 +57,7 @@ function getPage() {
                                     style={{textTransform: "capitalize"}}
                                     startIcon={<CallToActionIcon></CallToActionIcon>}
                                     className="home-button" onClick={() => {
-                                window.open('https://asa.algodesk.io', '_blank')
+                                window.open('https://asa.algodesk.io', '_blank');
                             }}>
                                 Asset Manager
                             </Button>
@@ -67,21 +68,22 @@ function getPage() {
                                         style={{textTransform: "capitalize"}}
                                         startIcon={<AccountBalanceWalletIcon></AccountBalanceWalletIcon>}
                                         onClick={() => {
-                                            window.open('https://wallet.algodesk.io', '_blank')
+                                            window.open('https://wallet.algodesk.io', '_blank');
                                         }}>
                                     Web Wallet
                                 </Button>
                         </Grid>
-                        {/*<Grid item xs={12} sm={12} md={12} xl={12}>*/}
-                        {/*        <Button fullWidth variant="outlined" color="primary"*/}
-                        {/*                className="home-button"*/}
-                        {/*                onClick={() => {*/}
-                        {/*                    window.location.href = "mailto:admin@algodesk.io";*/}
-                        {/*                }}*/}
-                        {/*        >*/}
-                        {/*            admin@algodesk.io*/}
-                        {/*        </Button>*/}
-                        {/*</Grid>*/}
+                        <Grid item xs={12} sm={12} md={12} xl={12}>
+                                <Button fullWidth variant="outlined" color="secondary"
+                                        className="home-button"
+                                        startIcon={<BugReportIcon></BugReportIcon>}
+                                        onClick={() => {
+                                            window.open('https://github.com/algodesk-io/algodesk.io/issues', '_blank');
+                                        }}
+                                >
+                                    Report issue / Request feature
+                                </Button>
+                        </Grid>
                         <Grid item xs={12} md={1} xl={1}>
                         </Grid>
                     </Grid>
