@@ -15,6 +15,9 @@
   url('styles/fonts/SourceSansPro-Light.otf.woff') format('truetype');
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: "SourceSansPro";
   .modal-icon-text {
