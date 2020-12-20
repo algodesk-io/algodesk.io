@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 
 const styles = (theme) => ({
     primaryText: {
-        color: theme.palette.primary.main
+        color: theme.palette.primary.dark
     }
 });
 
@@ -30,12 +30,11 @@ class Header extends React.Component {
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} xl={8}>
                         <div className={"logo"}>
-                            <img src={require('../../styles/images/Algorand.png')} style={{width: 15, marginRight: 5}} />
-                            Algodesk.io
+                            <span className={classes.primaryText}>Algodesk.io</span>
                         </div>
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} xl={2}>
-                            <Button variant="text" color="primary"
+                            <Button variant="text"
                                     style={{marginTop: 10, fontWeight: 'bold'}}
                                     onClick={() => {
                                         window.location.href = "mailto:admin@algodesk.io";
@@ -43,6 +42,14 @@ class Header extends React.Component {
                             >
                                 admin@algodesk.io
                             </Button>
+                        <Button variant="text"
+                                style={{marginTop: 10, fontWeight: 'bold'}}
+                                onClick={() => {
+                                    window.open('https://github.com/algodesk-io/algodesk.io/issues', '_blank');
+                                }}
+                        >
+                            Report issues
+                        </Button>
                     </Grid>
                 </Grid>
 
