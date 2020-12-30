@@ -28,15 +28,14 @@ class Header extends React.Component {
                 <Grid container spacing={2}>
                     <Grid item xs={2} sm={2} md={2} xl={2}>
                     </Grid>
-                    <Grid item xs={8} sm={8} md={8} xl={8}>
+                    <Grid item xs={6} sm={6} md={6} xl={6}>
                         <div className={"logo"}>
                             <span className={classes.primaryText}>Algodesk.io</span>
                         </div>
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} xl={2}>
                             <Button variant="text"
-                                    color={"primary"}
-                                    style={{marginTop: 10, fontWeight: 'bold'}}
+                                    style={{marginTop: 10}}
                                     onClick={() => {
                                         window.location.href = "mailto:admin@algodesk.io";
                                     }}
@@ -44,8 +43,7 @@ class Header extends React.Component {
                                 admin@algodesk.io
                             </Button>
                         <Button variant="text"
-                                color={"primary"}
-                                style={{marginTop: 10, fontWeight: 'bold'}}
+                                style={{marginTop: 10}}
                                 onClick={() => {
                                     window.open('https://github.com/algodesk-io/algodesk.io/issues', '_blank');
                                 }}
