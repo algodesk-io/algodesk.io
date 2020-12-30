@@ -35,6 +35,7 @@ class Header extends React.Component {
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} xl={2}>
                             <Button variant="text"
+                                    color={"primary"}
                                     style={{marginTop: 10, fontWeight: 'bold'}}
                                     onClick={() => {
                                         window.location.href = "mailto:admin@algodesk.io";
@@ -43,6 +44,7 @@ class Header extends React.Component {
                                 admin@algodesk.io
                             </Button>
                         <Button variant="text"
+                                color={"primary"}
                                 style={{marginTop: 10, fontWeight: 'bold'}}
                                 onClick={() => {
                                     window.open('https://github.com/algodesk-io/algodesk.io/issues', '_blank');
