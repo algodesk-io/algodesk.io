@@ -21,6 +21,7 @@
     "node-sass": "4.12.0",
     "numeral": "2.0.6",
     "promise": "8.0.3",
+    "qrcode.react": "^1.0.1",
     "react": "16.8.6",
     "react-bootstrap": "1.0.0-beta.9",
     "react-dom": "16.8.6",
