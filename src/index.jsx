@@ -17,10 +17,10 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-            main: '#6a1b9a'
+            main: '#4527A0' //4527A0 give 800 from this url: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
         },
         secondary: {
-            main: '#A30786'
+            main: '#AD1457'
         }
     }
 });

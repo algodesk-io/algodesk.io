@@ -9,7 +9,7 @@ import QRCode from 'qrcode.react';
 
 const styles = (theme) => ({
     primaryText: {
-        color: theme.palette.primary.dark
+        color: theme.palette.primary.main
     },
     dialog: {
         position: 'absolute',
@@ -80,6 +80,7 @@ class Header extends React.Component {
                     <Grid item xs={4} sm={4} md={4} xl={4}>
                             <Button variant="text"
                                     style={{marginTop: 10}}
+                                    color={"primary"}
                                     onClick={() => {
                                         window.location.href = "mailto:admin@algodesk.io";
                                     }}
@@ -87,7 +88,8 @@ class Header extends React.Component {
                                 admin@algodesk.io
                             </Button>
                         <Button variant="text"
-                                style={{marginTop: 10}}
+                                color={"primary"}
+                                style={{marginTop: 10, marginLeft: 10}}
                                 onClick={() => {
                                     window.open('https://github.com/algodesk-io/algodesk.io/issues', '_blank');
                                 }}
@@ -95,9 +97,7 @@ class Header extends React.Component {
                             Report issues
                         </Button>
 
-                        <Button variant="contained"
-                                color={"primary"}
-                                size={"small"}
+                        <Button color={"primary"}
                                 style={{marginTop: 10, marginLeft: 10}}
                                 onClick={() => {
                                     console.log(42342);
