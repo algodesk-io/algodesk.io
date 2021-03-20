@@ -6,6 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import {Dialog, DialogActions, DialogContent, DialogTitle} from "@material-ui/core";
 import QRCode from 'qrcode.react';
+import OfflineBoltIcon from '@material-ui/icons/OfflineBolt';
+import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 
 const styles = (theme) => ({
     primaryText: {
@@ -74,7 +76,8 @@ class Header extends React.Component {
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} xl={6}>
                         <div className={"logo"}>
-                            <span className={classes.primaryText}>Algodesk.io</span>
+
+                            <span><GraphicEqIcon style={{verticalAlign: 'sub'}}></GraphicEqIcon> Algodesk</span>
                         </div>
                     </Grid>
                     <Grid item xs={4} sm={4} md={4} xl={4}>

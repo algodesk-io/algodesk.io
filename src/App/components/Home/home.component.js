@@ -34,7 +34,7 @@ const mapStateToProps = state => {
 
 function getPage() {
     const {classes} = this.props;
-    const width = 12;
+    const width = 5;
     return (<div className="home-wrapper">
         <div className="home-container">
             <Grid container spacing={2}>
@@ -47,36 +47,60 @@ function getPage() {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={width} md={width} xl={width}>
-                                <Button variant="contained" color="primary"
-                                        className="home-button"
-                                        style={{textTransform: "capitalize"}}
-                                        onClick={() => {
-                                            window.open('https://applicationmanager.algodesk.io', '_blank');
-                                        }}>
-                                    Application Manager
-                                </Button>
-
                             <Button variant="contained" color="primary"
-                                    style={{textTransform: "capitalize",marginLeft: 20}}
+                                    size={"large"}
+                                    fullWidth
+                                    style={{textTransform: "capitalize"}}
                                     className="home-button" onClick={() => {
                                 window.open('https://asa.algodesk.io', '_blank');
                             }}>
                                 Asset Manager
                             </Button>
 
+
+
+
+
+
+
+
+
+                        </Grid>
+
+
+                        <Grid item xs={12} sm={width} md={width} xl={width}>
                             <Button variant="contained" color="primary"
                                     className="home-button"
-                                    style={{textTransform: "capitalize", marginLeft: 20}}
+                                    fullWidth
+                                    style={{textTransform: "capitalize"}}
+                                    size={"large"}
+                                    onClick={() => {
+                                        window.open('https://applicationmanager.algodesk.io', '_blank');
+                                    }}>
+                                Application Manager
+                            </Button>
+                        </Grid>
+
+                        <Grid item xs={12} sm={width} md={width} xl={width}>
+                            <Button variant="contained" color="primary"
+                                    className="home-button"
+                                    fullWidth
+                                    size={"large"}
+                                    style={{textTransform: "capitalize"}}
                                     onClick={() => {
                                         window.open('https://teal.algodesk.io', '_blank');
                                     }}>
-                                TEAL IDE
+                                Contract Buildr
                             </Button>
+                        </Grid>
 
 
+                        <Grid item xs={12} sm={width} md={width} xl={width}>
                             <Button variant="contained" color="primary"
                                     className="home-button"
-                                    style={{textTransform: "capitalize", marginLeft: 20}}
+                                    fullWidth
+                                    size={"large"}
+                                    style={{textTransform: "capitalize"}}
                                     onClick={() => {
                                         window.open('https://wallet.algodesk.io', '_blank');
                                     }}>
@@ -84,15 +108,11 @@ function getPage() {
                             </Button>
                         </Grid>
 
-                        <Grid item xs={12} sm={width} md={width} xl={width}>
-
-                        </Grid>
-
                     </Grid>
                 </Grid>
                 <Grid item xs={12} sm={4} md={4} xl={4}>
                     <div style={{marginTop: 50}}>
-                        <img src={require('../../styles/images/background2.jpeg')} />
+                        <img src={require('../../styles/images/back2.svg')} />
                     </div>
                 </Grid>
             </Grid>
