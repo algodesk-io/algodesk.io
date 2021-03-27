@@ -100,15 +100,15 @@ class Header extends React.Component {
                             Report issues
                         </Button>
 
-                        <Button color={"primary"}
-                                style={{marginTop: 10, marginLeft: 10}}
-                                onClick={() => {
-                                    console.log(42342);
-                                    this.setState({...this.state, showDonateModal: true});
-                                }}
-                        >
-                            Donate
-                        </Button>
+                        {/*<Button color={"primary"}*/}
+                        {/*        style={{marginTop: 10, marginLeft: 10}}*/}
+                        {/*        onClick={() => {*/}
+                        {/*            console.log(42342);*/}
+                        {/*            this.setState({...this.state, showDonateModal: true});*/}
+                        {/*        }}*/}
+                        {/*>*/}
+                        {/*    Donate*/}
+                        {/*</Button>*/}
 
                     </Grid>
                 </Grid>
