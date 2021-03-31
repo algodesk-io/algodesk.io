@@ -52,7 +52,7 @@ function getPage() {
                                     fullWidth
                                     style={{textTransform: "capitalize"}}
                                     className="home-button" onClick={() => {
-                                window.open('https://asa.algodesk.io', '_blank');
+                                window.open('https://assets.algodesk.io', '_blank');
                             }}>
                                 Asset Manager
                             </Button>
@@ -75,7 +75,7 @@ function getPage() {
                                     style={{textTransform: "capitalize"}}
                                     size={"large"}
                                     onClick={() => {
-                                        window.open('https://applicationmanager.algodesk.io', '_blank');
+                                        window.open('https://apps.algodesk.io', '_blank');
                                     }}>
                                 Application Manager
                             </Button>
@@ -88,7 +88,7 @@ function getPage() {
                                     size={"large"}
                                     style={{textTransform: "capitalize"}}
                                     onClick={() => {
-                                        window.open('https://teal.algodesk.io', '_blank');
+                                        window.open('https://buildr.algodesk.io', '_blank');
                                     }}>
                                 Contract Buildr
                             </Button>
